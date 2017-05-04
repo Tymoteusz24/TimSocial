@@ -76,6 +76,9 @@
                                     <constraint firstAttribute="height" constant="130" id="cF7-3U-2cr"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="f"/>
+                                <connections>
+                                    <action selector="facebookPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOW-7P-A6Z"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HCN-NE-8pz">
                                 <rect key="frame" x="46" y="367" width="283" height="175"/>

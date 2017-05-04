@@ -36,6 +36,7 @@
 		3B936FD91EBB60C60078D3CB /* RoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
 		3B936FDB1EBB62720078D3CB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		3B936FDF1EBB7FAA0078D3CB /* TimSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimSocial.entitlements; sourceTree = "<group>"; };
 		80396BD11E2F6A84B51E6A17 /* Pods-TimSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimSocial/Pods-TimSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 		3B936FBC1EBB502D0078D3CB /* TimSocial */ = {
 			isa = PBXGroup;
 			children = (
+				3B936FDF1EBB7FAA0078D3CB /* TimSocial.entitlements */,
 				3B936FD61EBB5E640078D3CB /* Util */,
 				3B936FD11EBB52140078D3CB /* Model */,
 				3B936FD31EBB521E0078D3CB /* Controller */,
@@ -173,8 +175,13 @@
 				TargetAttributes = {
 					3B936FB91EBB502D0078D3CB = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3C3Q949D94;
+						DevelopmentTeam = QBFHB9J93K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,7 +402,8 @@
 			baseConfigurationReference = 80396BD11E2F6A84B51E6A17 /* Pods-TimSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3C3Q949D94;
+				CODE_SIGN_ENTITLEMENTS = TimSocial/TimSocial.entitlements;
+				DEVELOPMENT_TEAM = QBFHB9J93K;
 				INFOPLIST_FILE = TimSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kinia.TimSocial;
@@ -409,7 +417,8 @@
 			baseConfigurationReference = 0C6D0D9126829A24F831AF7E /* Pods-TimSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3C3Q949D94;
+				CODE_SIGN_ENTITLEMENTS = TimSocial/TimSocial.entitlements;
+				DEVELOPMENT_TEAM = QBFHB9J93K;
 				INFOPLIST_FILE = TimSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kinia.TimSocial;
