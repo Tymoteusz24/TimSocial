@@ -13,6 +13,11 @@
 		3B936FC51EBB502D0078D3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B936FC41EBB502D0078D3CB /* Assets.xcassets */; };
 		3B936FC81EBB502D0078D3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B936FC61EBB502D0078D3CB /* LaunchScreen.storyboard */; };
 		3B936FD01EBB50B80078D3CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B936FCF1EBB50B80078D3CB /* GoogleService-Info.plist */; };
+		3B936FD51EBB5D750078D3CB /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FD41EBB5D750078D3CB /* FancyView.swift */; };
+		3B936FD81EBB5E740078D3CB /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FD71EBB5E740078D3CB /* Constans.swift */; };
+		3B936FDA1EBB60C60078D3CB /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FD91EBB60C60078D3CB /* RoundedBtn.swift */; };
+		3B936FDC1EBB62720078D3CB /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FDB1EBB62720078D3CB /* FancyField.swift */; };
+		3B936FDE1EBB63E80078D3CB /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */; };
 		9FD216B7696C343D1612F375 /* Pods_TimSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		3B936FC71EBB502D0078D3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B936FC91EBB502D0078D3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B936FCF1EBB50B80078D3CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B936FD41EBB5D750078D3CB /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		3B936FD71EBB5E740078D3CB /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		3B936FD91EBB60C60078D3CB /* RoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		3B936FDB1EBB62720078D3CB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		80396BD11E2F6A84B51E6A17 /* Pods-TimSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimSocial/Pods-TimSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +73,7 @@
 		3B936FBC1EBB502D0078D3CB /* TimSocial */ = {
 			isa = PBXGroup;
 			children = (
+				3B936FD61EBB5E640078D3CB /* Util */,
 				3B936FD11EBB52140078D3CB /* Model */,
 				3B936FD31EBB521E0078D3CB /* Controller */,
 				3B936FD21EBB52190078D3CB /* View */,
@@ -86,6 +97,10 @@
 		3B936FD21EBB52190078D3CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B936FD41EBB5D750078D3CB /* FancyView.swift */,
+				3B936FD91EBB60C60078D3CB /* RoundedBtn.swift */,
+				3B936FDB1EBB62720078D3CB /* FancyField.swift */,
+				3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +111,14 @@
 				3B936FBF1EBB502D0078D3CB /* SingInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		3B936FD61EBB5E640078D3CB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3B936FD71EBB5E740078D3CB /* Constans.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		535B89EF73BBFEB137F59DFD /* Frameworks */ = {
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B936FDC1EBB62720078D3CB /* FancyField.swift in Sources */,
 				3B936FC01EBB502D0078D3CB /* SingInVC.swift in Sources */,
 				3B936FBE1EBB502D0078D3CB /* AppDelegate.swift in Sources */,
+				3B936FDA1EBB60C60078D3CB /* RoundedBtn.swift in Sources */,
+				3B936FD81EBB5E740078D3CB /* Constans.swift in Sources */,
+				3B936FD51EBB5D750078D3CB /* FancyView.swift in Sources */,
+				3B936FDE1EBB63E80078D3CB /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
