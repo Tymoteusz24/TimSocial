@@ -18,12 +18,12 @@ class FeedVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func signOutPressed(_ sender: Any) {
-        let keyChainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-        print("TIMI: ID removed from keychain \(keyChainResult)")
-        try! FIRAuth.auth()?.signOut()
-        performSegue(withIdentifier: "signOut", sender: nil)
-        
-    }
+//    @IBAction func signOutPressed(_ sender: Any) {
+//        let keyChainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+//        print("TIMI: ID removed from keychain \(keyChainResult)")
+//        try! FIRAuth.auth()?.signOut()
+//        performSegue(withIdentifier: "signOut", sender: nil)
+//        
+//    }
 
 }
