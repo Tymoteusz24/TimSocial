@@ -52,12 +52,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.row]
-        print("TIMI: \(post.caption)")
-        
-        return tableView.dequeueReusableCell(withIdentifier: "FeedCell") as! FeedCell
-        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as? FeedCell {
+            let post = posts[indexPath.row]
+            cell.configureCell(post: post)
+            return cell
+        } else {
+            return FeedCell()
+        }
     }
+    
     
     
     @IBAction func signOutPress(_ sender: Any) {

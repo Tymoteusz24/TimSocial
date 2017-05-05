@@ -19,13 +19,16 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var numberLikesLbl: UILabel!
    // @IBOutlet weak var caption: UITextField!
     
+    var post: Post!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func configureCell() {
-        
+    func configureCell(post: Post) {
+        self.post = post
+        self.feedText.text = post.caption
+        self.likesLbl.text = "\(post.likes)"
     }
 
 

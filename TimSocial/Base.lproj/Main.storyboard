@@ -283,7 +283,8 @@
                                                                         <constraint firstAttribute="height" constant="50" id="RtI-L6-rid"/>
                                                                     </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zJB-Py-ZrM">
@@ -306,8 +307,10 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="fDp-Z1-v6g" firstAttribute="top" secondItem="oz2-CL-qFA" secondAttribute="top" id="TCa-Sw-FOm"/>
+                                                                <constraint firstAttribute="trailing" secondItem="0ba-fI-vei" secondAttribute="trailing" id="X1C-by-aGb"/>
                                                                 <constraint firstAttribute="trailing" secondItem="fDp-Z1-v6g" secondAttribute="trailing" id="gCy-yy-fjN"/>
                                                                 <constraint firstItem="fDp-Z1-v6g" firstAttribute="leading" secondItem="oz2-CL-qFA" secondAttribute="leading" id="tY6-HK-CRe"/>
+                                                                <constraint firstItem="0ba-fI-vei" firstAttribute="leading" secondItem="oz2-CL-qFA" secondAttribute="leading" id="vUc-I1-jzb"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
@@ -330,10 +333,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="feedImage" destination="yLP-mg-lNR" id="VCm-yu-mIv"/>
-                                            <outlet property="feedText" destination="0ba-fI-vei" id="Hy6-RM-m4e"/>
-                                            <outlet property="likeImage" destination="QaR-04-rCZ" id="UNI-sp-g9u"/>
-                                            <outlet property="likesLbl" destination="e1f-sM-lnn" id="hBp-86-WGc"/>
-                                            <outlet property="numberLikesLbl" destination="o9Y-5o-xPT" id="rRT-Ag-FaQ"/>
+                                            <outlet property="feedText" destination="0ba-fI-vei" id="Hq2-s5-lqE"/>
+                                            <outlet property="likesLbl" destination="o9Y-5o-xPT" id="eFE-ev-yBw"/>
                                             <outlet property="profileImage" destination="X7P-Sm-ob2" id="4XT-SD-bxo"/>
                                             <outlet property="profileLbl" destination="52E-7d-0qA" id="mOk-gk-6qF"/>
                                         </connections>
