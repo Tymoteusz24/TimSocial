@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     @IBOutlet weak var emailField: FancyField!
@@ -17,14 +18,17 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("Tim")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
     @IBAction func facebookPressed(_ sender: Any) {
         
         let facebookLogin = FBSDKLoginManager()
@@ -48,7 +52,10 @@ class SignInVC: UIViewController {
                 print("TIM: Unable to auth with Firebase - \(String(describing: error))")
             } else {
                 print("TIM: Succecfully auth with Firebase")
-            }
+                if let user = user {
+                   self.completedSignIn(id: user.uid)
+                }
+                }
         })
         
     }
@@ -58,12 +65,19 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("TIMI: Email user auth with firebase")
+                    if let user = user {
+                        self.completedSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("Timi: Email user failed auth with FIREBASE")
                         } else {
                             print("TIMI: Succesfully created account with firebase")
+                            if let user = user {
+                                self.completedSignIn(id: user.uid)
+                            }
+                            
                         }
                     })
                     
@@ -73,6 +87,11 @@ class SignInVC: UIViewController {
         
     }
     
+    func completedSignIn(id: String) {
+        let keyChainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("Timi- Data saved to keychain \(keyChainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
 
 }
 

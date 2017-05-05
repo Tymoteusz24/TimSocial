@@ -18,6 +18,7 @@
 		3B936FDA1EBB60C60078D3CB /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FD91EBB60C60078D3CB /* RoundedBtn.swift */; };
 		3B936FDC1EBB62720078D3CB /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FDB1EBB62720078D3CB /* FancyField.swift */; };
 		3B936FDE1EBB63E80078D3CB /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */; };
+		3BA7B2981EBC3BB300EBA58A /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B2971EBC3BB300EBA58A /* FeedVC.swift */; };
 		9FD216B7696C343D1612F375 /* Pods_TimSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		3B936FDB1EBB62720078D3CB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		3B936FDD1EBB63E80078D3CB /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		3B936FDF1EBB7FAA0078D3CB /* TimSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimSocial.entitlements; sourceTree = "<group>"; };
+		3BA7B2971EBC3BB300EBA58A /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		80396BD11E2F6A84B51E6A17 /* Pods-TimSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimSocial/Pods-TimSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3B936FBF1EBB502D0078D3CB /* SingInVC.swift */,
+				3BA7B2971EBC3BB300EBA58A /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				3B936FC01EBB502D0078D3CB /* SingInVC.swift in Sources */,
 				3B936FBE1EBB502D0078D3CB /* AppDelegate.swift in Sources */,
 				3B936FDA1EBB60C60078D3CB /* RoundedBtn.swift in Sources */,
+				3BA7B2981EBC3BB300EBA58A /* FeedVC.swift in Sources */,
 				3B936FD81EBB5E740078D3CB /* Constans.swift in Sources */,
 				3B936FD51EBB5D750078D3CB /* FancyView.swift in Sources */,
 				3B936FDE1EBB63E80078D3CB /* FancyBtn.swift in Sources */,
