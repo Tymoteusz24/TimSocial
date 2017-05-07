@@ -23,6 +23,8 @@
 		3BA7B29C1EBC60C000EBA58A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B29B1EBC60C000EBA58A /* FeedCell.swift */; };
 		3BA7B29F1EBC76CC00EBA58A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B29E1EBC76CC00EBA58A /* DataService.swift */; };
 		3BA7B2A11EBC8F6B00EBA58A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B2A01EBC8F6B00EBA58A /* Post.swift */; };
+		3BA7B2A31EBCF39000EBA58A /* PersonaliseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B2A21EBCF39000EBA58A /* PersonaliseVC.swift */; };
+		3BA7B2A51EBCFAB600EBA58A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B2A41EBCFAB600EBA58A /* Users.swift */; };
 		9FD216B7696C343D1612F375 /* Pods_TimSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		3BA7B29B1EBC60C000EBA58A /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3BA7B29E1EBC76CC00EBA58A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3BA7B2A01EBC8F6B00EBA58A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3BA7B2A21EBCF39000EBA58A /* PersonaliseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonaliseVC.swift; sourceTree = "<group>"; };
+		3BA7B2A41EBCFAB600EBA58A /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		80396BD11E2F6A84B51E6A17 /* Pods-TimSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimSocial/Pods-TimSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		88BB3CBBD0F16CDE57884586 /* Pods_TimSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3BA7B2A01EBC8F6B00EBA58A /* Post.swift */,
+				3BA7B2A41EBCFAB600EBA58A /* Users.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			children = (
 				3B936FBF1EBB502D0078D3CB /* SingInVC.swift */,
 				3BA7B2971EBC3BB300EBA58A /* FeedVC.swift */,
+				3BA7B2A21EBCF39000EBA58A /* PersonaliseVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -299,11 +305,13 @@
 				3BA7B2A11EBC8F6B00EBA58A /* Post.swift in Sources */,
 				3B936FBE1EBB502D0078D3CB /* AppDelegate.swift in Sources */,
 				3B936FDA1EBB60C60078D3CB /* RoundedBtn.swift in Sources */,
+				3BA7B2A51EBCFAB600EBA58A /* Users.swift in Sources */,
 				3BA7B29F1EBC76CC00EBA58A /* DataService.swift in Sources */,
 				3BA7B29C1EBC60C000EBA58A /* FeedCell.swift in Sources */,
 				3BA7B2981EBC3BB300EBA58A /* FeedVC.swift in Sources */,
 				3B936FD81EBB5E740078D3CB /* Constans.swift in Sources */,
 				3B936FD51EBB5D750078D3CB /* FancyView.swift in Sources */,
+				3BA7B2A31EBCF39000EBA58A /* PersonaliseVC.swift in Sources */,
 				3B936FDE1EBB63E80078D3CB /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
